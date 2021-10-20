@@ -1,9 +1,12 @@
 import { Flex, HStack } from "@chakra-ui/react";
+import Navbar from "../components/Navbar";
 
 const IndexPage = () => {
   return (
     <HStack h="100vh" spacing={0} bg="white">
-      <Flex as="nav" h="full" maxW={16} w="full" bg="gray.100"></Flex>
+      <Flex as="nav" h="full" maxW={16} w="full" bg="gray.100">
+        <Navbar />
+      </Flex>
       <Flex
         as="aside"
         h="full"
