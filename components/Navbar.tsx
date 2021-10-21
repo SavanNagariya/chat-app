@@ -6,7 +6,7 @@ const Navigation = () => {
   return (
     <VStack p={6} justifyContent="space-between" alignItems="center" w="full">
       <VStack>
-        <Text color="black">App</Text>
+        <Text>App</Text>
         <Tooltip label="Dashboard" placement="right">
           <IconButton
             color="gray.500"

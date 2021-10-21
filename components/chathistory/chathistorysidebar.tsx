@@ -32,7 +32,7 @@ const LeftSidebar = () => {
             borderColor="green.500"
           ></AvatarBadge>
         </Avatar>
-        <Heading color="black" fontSize={25} size="sm" mt={5}>
+        <Heading fontSize={25} size="sm" mt={5}>
           Savan
         </Heading>
         <Flex
@@ -66,7 +66,7 @@ const LeftSidebar = () => {
           />
         </Flex>
       </Flex>
-      <HStack color="black" justifyContent="space-between" w="full" pt={6}>
+      <HStack justifyContent="space-between" w="full" pt={6}>
         <Heading size="xs">Friend Online</Heading>
         <Text>22</Text>
       </HStack>
@@ -87,14 +87,13 @@ const LeftSidebar = () => {
         w="full"
         py={2}
       ></Box>
-      <Box w="full" color="black">
+      <Box w="full">
         <Input
           variant="filled"
           rounded="xl"
           w="full"
           h={10}
           bg="gray.100"
-          color="black"
           placeholder="Search Chat"
         />
       </Box>
