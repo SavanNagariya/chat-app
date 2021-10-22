@@ -87,16 +87,99 @@ const LeftSidebar = () => {
         w="full"
         py={2}
       ></Box>
-      <Box w="full">
+      <Box w="full" pt={2}>
+        <Heading size="sm">Chat</Heading>
         <Input
-          variant="filled"
-          rounded="xl"
+          mt={3}
+          variant="outline"
+          rounded="3xl"
           w="full"
           h={10}
-          bg="gray.100"
           placeholder="Search Chat"
         />
       </Box>
+      <VStack overflow="auto">
+        <HStack
+          justifyContent="space-between"
+          w="full"
+          borderBottomWidth={1}
+          borderBottomColor="gray.100"
+          py={2}
+        >
+          <Avatar></Avatar>
+          <Box>
+            <Heading size="md">Kunal Gosrani</Heading>
+            <Text fontSize="xs" color="gray.500">
+              dfgjdg sfhjfdh
+            </Text>
+          </Box>
+          <Text>18:49</Text>
+        </HStack>
+        <HStack
+          justifyContent="space-between"
+          w="full"
+          borderBottomWidth={1}
+          borderBottomColor="gray.100"
+          py={2}
+        >
+          <Avatar></Avatar>
+          <Box>
+            <Heading size="md">Harshit Sangani</Heading>
+            <Text fontSize="xs" color="gray.500">
+              dfgjdg sfhjfdh
+            </Text>
+          </Box>
+          <Text>18:49</Text>
+        </HStack>
+        <HStack
+          justifyContent="space-between"
+          w="full"
+          borderBottomWidth={1}
+          borderBottomColor="gray.100"
+          py={2}
+        >
+          <Avatar></Avatar>
+          <Box>
+            <Heading size="md">Savan Nagariya</Heading>
+            <Text fontSize="xs" color="gray.500">
+              dfgjdg sfhjfdh
+            </Text>
+          </Box>
+          <Text>18:49</Text>
+        </HStack>
+        <HStack
+          justifyContent="space-between"
+          w="full"
+          borderBottomWidth={1}
+          borderBottomColor="gray.100"
+          py={2}
+        >
+          <Avatar></Avatar>
+          <Box>
+            <Heading size="md">Mayank Oza</Heading>
+            <Text fontSize="xs" color="gray.500">
+              dfgjdg sfhjfdh
+            </Text>
+          </Box>
+          <Text>18:49</Text>
+        </HStack>
+        <HStack
+          justifyContent="space-between"
+          w="full"
+          borderBottomWidth={1}
+          borderBottomColor="gray.100"
+          py={2}
+        >
+          <Avatar></Avatar>
+          <Box>
+            <Heading size="md">Savan Sangani</Heading>
+            <Text fontSize="xs" color="gray.500">
+              dfgjdg sfhjfdh
+            </Text>
+          </Box>
+          <Text>18:49</Text>
+        </HStack>
+      </VStack>
     </VStack>
   );
 };
