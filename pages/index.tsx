@@ -1,4 +1,5 @@
 import { Flex, HStack, Button } from "@chakra-ui/react";
+import Chat from "../components/chat";
 import LeftSidebar from "../components/chathistory/chathistorysidebar";
 import Navbar from "../components/Navbar";
 
@@ -25,7 +26,9 @@ const IndexPage = () => {
           flex={1}
           borderRightColor="gray.100"
           borderRightWidth={2}
-        ></Flex>
+        >
+          <Chat />
+        </Flex>
         <Flex as="aside" h="full" maxW="sm" w="full"></Flex>
       </HStack>
     </>
