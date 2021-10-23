@@ -41,27 +41,28 @@ const LeftSidebar = () => {
           borderBottomColor="gray.200"
           w="full"
           justifyContent="center"
+          gridGap={5}
           pb={4}
         >
           <IconButton
             icon={<RiInstagramLine />}
             variant="ghost"
             aria-label=""
-            color="gray.700"
+            color="gray.500"
             fontSize={21}
           />
           <IconButton
             icon={<RiTwitterLine />}
             variant="ghost"
             aria-label=""
-            color="gray.700"
+            color="gray.500"
             fontSize={21}
           />
           <IconButton
             icon={<RiDribbbleLine />}
             variant="ghost"
             aria-label=""
-            color="gray.700"
+            color="gray.500"
             fontSize={21}
           />
         </Flex>
