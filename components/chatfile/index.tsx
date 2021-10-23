@@ -7,9 +7,15 @@ import {
   Avatar,
   AvatarBadge,
   Heading,
+  Button,
+  List,
+  ListItem,
+  Divider,
 } from "@chakra-ui/react";
 import { FaBell } from "react-icons/fa";
 import { RiDribbbleLine, RiInstagramLine, RiTwitterLine } from "react-icons/ri";
+import ChatLink from "./ChatLink";
+import ShareFile from "./ShareFile";
 const ChatFile = () => {
   return (
     <Flex px={7} w="full" flexDirection="column" alignItems="center" pt={2}>
@@ -69,6 +75,48 @@ const ChatFile = () => {
           />
         </Flex>
       </HStack>
+      <VStack w="full" overflowY="auto">
+        <HStack justify="space-between" w="full" alignItems="center" pt={4}>
+          <Heading fontSize="md">Shared File</Heading>
+          <Button fontSize="xs" color="gray.500" variant="text">
+            see all
+          </Button>
+        </HStack>
+        <List w="full" spacing={5}>
+          <ListItem>
+            <ShareFile />
+          </ListItem>
+          <ListItem>
+            <ShareFile />
+          </ListItem>
+          <ListItem>
+            <ShareFile />
+          </ListItem>
+          <ListItem>
+            <ShareFile />
+          </ListItem>
+          <ListItem>
+            <ShareFile />
+          </ListItem>
+        </List>
+      </VStack>
+      <Divider pt={3}></Divider>
+      <VStack w="full" py={3}>
+        <HStack justify="space-between" w="full" alignItems="center">
+          <Heading fontSize="md">Shared Link</Heading>
+          <Button fontSize="xs" color="gray.500" variant="text">
+            see all
+          </Button>
+        </HStack>
+        <List w="full" spacing={3}>
+          <ListItem>
+            <ChatLink />
+          </ListItem>
+          <ListItem>
+            <ChatLink />
+          </ListItem>
+        </List>
+      </VStack>
     </Flex>
   );
 };
